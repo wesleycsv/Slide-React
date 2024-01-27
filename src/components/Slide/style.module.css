@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+.slide {
+  flex-shrink: 0;
+  width: 90%;
+  background-color: red;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.btnAnterior {
+  background: #93c82e; /* fallback for old browsers */
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+}
+.btnAnterior:hover {
+  background-color: #11998e;
+}
+
+.btnProximo {
+  background: #93c82e; /* fallback for old browsers */
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+}
+.btnProximo:hover {
+  background-color: #11998e;
+}
